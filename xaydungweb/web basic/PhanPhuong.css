@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #eaeae8;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  padding: 20px 8px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  line-height: 1.4;
+  justify-content: space-around;
+}
+.title {
+  color: #810d0e;
+}
+.ds {
+  color: #ff7003;
+}
+.h1 {
+}
+.hd2 {
+  display: flex;
+}
+.menu {
+  height: 30px;
+  width: 100%;
+  background-color: #810d0e;
+}
+.content {
+}
+.footer {
+}

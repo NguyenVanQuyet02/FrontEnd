@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BEM btn</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/BEM btn.css">
+    </head>
+    <body>
+        <!-- <h1>BNT</h1>
+        <div>
+            <button class="btn btn--sc">GO TO NEXT APPROVAL</button>
+            <button class="btn btn--war btn--dis">OK</button>
+            <button class="btn btn--error">TRY AGAIN</button>
+        </div> -->
+
+        <!-- success -->
+        <div id="toast">
+            <div class="toast toast--success">
+                <div class="toast__icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="toast__body">
+                    <h3 class="toast__title">Success</h3>
+                    <p class="toast__msg">The next generation of the web’s favorite icon library + toolkit</p>
+                </div>
+                <div class="toast__close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn--sc">GO TO NEXT APPROVAL</button>
+            <button class="btn btn--error">TRY AGAIN</button>
+        </div>
+        <script>
+            function toast({ 
+            title = '', 
+            message = '', 
+            type = 'info' , 
+            duration = 3000
+            }){
+                const main = document.getElementById('toast');
+                if (main){
+                    const toast = document.createElement('div');
+                    toast.classList.add('toast');
+                    toast.innerHTML ='  ';
+                }
+            }
+            toast({
+                title: 'success',
+                message:'The next generation of the web’s favorite icon library + toolkit',
+                // kiểu 
+                type: success,
+                // thời gian ẩn
+                duration: 3000
+            });
+        </script>
+    </body>
+</html>
